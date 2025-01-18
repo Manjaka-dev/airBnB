@@ -1,0 +1,117 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #f9f9f9;
+    background-color: #f9f9f9;
+    overflow-x: hidden;
+}
+
+/* Form section */
+#signin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+}
+
+#signin .content {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #333;
+    text-align: left;
+}
+
+/* Container for input fields and icons */
+.input-container {
+    position: relative;
+}
+
+input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: #fff;
+    transition: border 0.3s ease;
+    padding-left: 35px; /* Added space for icons */
+}
+
+/* Icon styles */
+.input-container i {
+    position: absolute;
+    left: 10px;
+    top: 58%;
+    transform: translateY(-50%);
+    color: #ff5a5e;;
+}
+
+/* Change border color on focus */
+input:focus {
+    border: 1px solid #ff5a5f;
+    outline: none;
+}
+
+button {
+    background-color: #ff5a5f;
+    color: #f9f9f9;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #ff787d;
+    transform: scale(1.05);
+}
+
+/* Password match indication */
+#password-match {
+    color: #ff5a5f;
+    font-size: 1em;
+    margin-top: 5px;
+    font-weight: bold;
+}
