@@ -16,5 +16,8 @@ $router->get('/', function() {
 });
 
 $router->get('/test', function() {
-	Flight::render('sing-in');
+	Flight::render('log-in');
+});
+$router->get('/compare', function() {
+	Flight::render('sign-in');
 });
