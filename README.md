@@ -9,10 +9,10 @@ This skeleton application was built for Composer. You also could download a zip 
 Run this command from the directory in which you want to install your new Flight PHP application. (this will require PHP 7.4 or newer)
 
 ```bash
-composer create-project flightphp/skeleton cool-project-name
+composer create-project flightphp/skeleton airBnB
 ```
 
-Replace `cool-project-name` with the desired directory name for your new application.
+Replace `airBnB` with the desired directory name for your new application.
 
 After you create the project, make sure you go to the `app/config/config.php` and `app/config/services.php` and uncomment the lines related to the database you want to use before you get started.
 
@@ -43,7 +43,7 @@ This is what the config file is for. If you need to save sensitive credentials, 
 To run the application in development, you can run these commands 
 
 ```bash
-cd cool-project-name
+cd airBnB
 composer start
 ```
 
@@ -55,7 +55,7 @@ __Note: If you run into an error similar to this `Failed to listen on localhost:
 
 You can [install Docker](https://docs.docker.com/engine/install/) and use `docker-compose` to run the app with `docker`, so you can run these commands:
 ```bash
-cd cool-project-name
+cd airBnB
 docker-compose up -d
 # or if a newer version of docker
 docker compose up -d
@@ -66,7 +66,7 @@ After that, open `http://localhost:8000` in your browser.
 You can [install Vagrant](https://vagrantup.com/download) and a provider like [VirtualBox](https://www.virtualbox.org/wiki/Downloads) and use simple run the following command to bring up an environment with PHP/MariaDB already setup based on [n0nag0n/firefly](https://github.com/n0nag0n/firefly)
 
 ```bash
-cd cool-project-name
+cd airBnB
 vagrant up
 ```
 
