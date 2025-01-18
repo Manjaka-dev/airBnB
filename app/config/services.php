@@ -10,8 +10,12 @@ use Tracy\Debugger;
  * @var Engine $app
  */
 
-// uncomment the following line for MySQL
- $dsn = 'mysql:host=' . $config['database']['host'] . ';dbname=' . $config['database']['dbname'] . ';charset=utf8mb4';
+// Remplacer la ligne pour MySQL
+// $dsn = 'mysql:host=' . $config['database']['host'] . ';dbname=' . $config['database']['dbname'] . ';charset=utf8mb4';
+
+// Nouvelle ligne pour PostgreSQL
+$dsn = 'pgsql:host=' . $config['database']['host'] . ';port=5432;dbname=' . $config['database']['dbname'];
+
 
 // uncomment the following line for SQLite
 // $dsn = 'sqlite:' . $config['database']['file_path'];
