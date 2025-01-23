@@ -16,7 +16,7 @@ $router->get('/', function() {
 });
 
 $router->get('/test', function() {
-	Flight::render('log-in');
+	Flight::render('front-office-template');
 });
 $router->get('/compare', function() {
 	Flight::render('sign-in');
