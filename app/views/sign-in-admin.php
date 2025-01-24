@@ -14,7 +14,7 @@
             <?php if (isset($error)): ?>
                 <p class="error"><?= $error ?></p>
             <?php endif; ?>
-            <form action="/user/inscription-check" method="post" enctype="multipart/form-data">
+            <form action="/admin/inscription-check" method="post" enctype="multipart/form-data">
                 <div class="input-container">
                     <i class="fa fa-user"></i>
                     <label for="first_name">First name</label>
