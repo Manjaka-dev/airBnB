@@ -4,5 +4,6 @@ app/config/config.php
 composer.lock
 .vagrant/
 runway
+todo
 local.session.sql
 .DS_Store

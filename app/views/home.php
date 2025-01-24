@@ -20,8 +20,8 @@
             <h1>Welcome to AirBnB</h1>
             <h4>Experience the World, One Home at a Time</h4>
             <div class="buttons">
-                <a href="#"><button>Sign In</button></a>
-                <a href="#"><button>Connect</button></a>
+                <a href="/user/sign-in"><button>Sign In</button></a>
+                <a href="/user/log-in"><button>Connect</button></a>
             </div>
         </div>
     </section>
@@ -48,8 +48,8 @@
         <div class="content card">
             <h1>Administrator Panel</h1>
             <div class="buttons">
-                <a href="#"><button>Log In</button></a>
-                <a href="#"><button>Sign Up</button></a>
+                <a href="/admin/log-in"><button>Log In</button></a>
+                <a href="/admin/sign-in"><button>Sign Up</button></a>
             </div>
         </div>
     </section>

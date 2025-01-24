@@ -6,13 +6,15 @@
     <title>Sign in</title>
     <link rel="stylesheet" href="/assets/css/sign-in.css"> <!-- Nouveau fichier CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
 </head>
 <body>
     <section id="signin">
         <div class="content">
             <h1>Sign in</h1>
-            <form action="" method="post">
+            <?php if (isset($error)): ?>
+                <p class="error"><?= $error ?></p>
+            <?php endif; ?>
+            <form action="/admin/inscription-check" method="post" enctype="multipart/form-data">
                 <div class="input-container">
                     <i class="fa fa-user"></i>
                     <label for="first_name">First name</label>

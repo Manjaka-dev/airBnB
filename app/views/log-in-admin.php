@@ -12,7 +12,7 @@
     <section id="login">
         <div class="content">
             <h1>Log in</h1>
-            <form action="" method="post">
+            <form action="/admin/login-check" method="post">
                 <div class="input-container">
                     <i class="fa fa-envelope"></i>
                     <label for="mail">Email address</label>
