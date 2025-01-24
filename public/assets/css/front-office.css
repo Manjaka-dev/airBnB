@@ -253,15 +253,82 @@ nav .user-menu .profile-img {
     color: #fff;
 }
 
-/* Style pour les titres principaux */
-h1 {
-    font-size: 2.5rem; /* Taille de la police */
-    color: #333; /* Couleur du texte */
-    text-align: center; /* Aligner au centre */
-    margin: 20px 0; /* Espacement au-dessus et en-dessous */
-    text-transform: uppercase; /* Mettre le texte en majuscules */
-    letter-spacing: 2px; /* Espacement entre les lettres */
-    background: linear-gradient(90deg, #ff5a5f, #ff787d); /* Dégradé de couleur */
-    -webkit-background-clip: text; /* Affichage du dégradé dans le texte */
-    -webkit-text-fill-color: transparent; /* Rendre le texte transparent pour le dégradé */
+/* --- Property Carousel --- */
+.property-carousel {
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+.property-carousel .carousel-image {
+    width: 30vw;
+    height: 20vh;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.property-carousel .carousel-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Property Details Section --- */
+.property-details {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.property-title {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.property-description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.property-long-description {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.property-info p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.property-info strong {
+    font-weight: bold;
+}
+
+/* --- Back Button --- */
+.back-button {
+    background-color: #ff385c;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #ff6f79;
+    transform: scale(1.05);
 }
