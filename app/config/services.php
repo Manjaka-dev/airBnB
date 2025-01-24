@@ -5,6 +5,9 @@ use flight\database\PdoWrapper;
 use flight\debug\database\PdoQueryCapture;
 use Tracy\Debugger;
 use app\models\UserModel;
+use app\models\PropertyModel;
+
+use Nette\PhpGenerator\Property;
 
 /** 
  * @var array $config This comes from the returned array at the bottom of the config.php file
@@ -34,4 +37,8 @@ $app->register('db', $pdoClass, [ $dsn, $config['database']['user'] ?? null, $co
 
 Flight::map('UserModel', function () {
     return new UserModel(Flight::db());
+});
+
+Flight::map('PropertyModel', function () {
+    return new PropertyModel(Flight::db());
 });
