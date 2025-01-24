@@ -148,3 +148,187 @@ nav .user-menu .profile-img {
 .content-menu {
     animation: slideDown 0.3s ease-out;
 }
+
+/* Habitation Container */
+.carousel-container {
+    display: flex;
+    gap: 2vw; /* Espacement ajusté à 2% de la largeur de l'écran */
+    overflow-x: auto;
+    padding: 2vh 2vw; /* Espacement intérieur basé sur l'écran */
+    scroll-behavior: smooth;
+}
+
+.carousel-container::-webkit-scrollbar {
+    display: none; /* Cacher la barre de défilement */
+}
+
+/* Carte Habitation */
+.habitation-card {
+    background-color: #fff;
+    border-radius: 1.5vw; /* Coins arrondis proportionnels */
+    box-shadow: 0 0.6vw 1.5vw rgba(0, 0, 0, 0.1); /* Ombre proportionnelle */
+    width: 22vw; /* Largeur pour afficher 4 cartes sur un écran (environ 25% de largeur chacune) */
+    flex-shrink: 0;
+    overflow: hidden;
+    text-align: center;
+    padding: 1.5vh 1vw; /* Padding ajusté dynamiquement */
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.habitation-card:hover {
+    transform: translateY(-1vh); /* Décalage au survol ajusté */
+    box-shadow: 0 0.8vw 2.5vw rgba(0, 0, 0, 0.2); /* Ombre renforcée */
+}
+
+.habitation-card img {
+    width: 100%;
+    height: 20vh; /* Hauteur dynamique ajustée */
+    object-fit: cover;
+    border-radius: 1.5vw 1.5vw 0 0; /* Coins arrondis uniquement en haut */
+}
+
+/* Titre */
+.habitation-card h2 {
+    font-size: 1.5vw; /* Taille du titre dynamique */
+    margin: 1.5vh 0;
+    color: #333;
+}
+
+/* Prix */
+.habitation-card p {
+    font-size: 1.2vw; /* Texte du prix dynamique */
+    color: #ff5a5f;
+    font-weight: bold;
+    margin-bottom: 2vh;
+}
+
+/* Étoiles */
+.stars ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    margin: 0 0 1.5vh;
+}
+
+.stars ul li {
+    margin: 0 0.5vw; /* Espacement ajusté proportionnellement */
+}
+
+.stars ul li i {
+    color: #ffcc00;
+    font-size: 1.5vw; /* Taille des étoiles ajustée */
+}
+
+/* Bouton "J'adore" */
+.love-button {
+    position: absolute;
+    top: 1.5vh; /* Ajustement dynamique */
+    right: 1.5vw;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 4vw; /* Taille dynamique */
+    height: 4vw; /* Taille dynamique */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0.6vw 1.5vw rgba(0, 0, 0, 0.1); /* Ombre proportionnelle */
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.love-button:hover {
+    transform: scale(1.2); /* Zoom au survol */
+    background-color: #ff5a5f;
+}
+
+.love-button i {
+    color: #ff5a5f;
+    font-size: 1.5vw; /* Taille dynamique de l'icône */
+    transition: color 0.3s ease;
+}
+
+.love-button:hover i {
+    color: #fff;
+}
+
+/* --- Property Carousel --- */
+.property-carousel {
+    display: flex;
+    gap: 10px;
+    overflow-x: scroll;
+    padding: 20px;
+    scroll-behavior: smooth;
+}
+
+.property-carousel .carousel-image {
+    width: 30vw;
+    height: 20vh;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.property-carousel .carousel-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Property Details Section --- */
+.property-details {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.property-title {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.property-description {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.property-long-description {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.property-info p {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.property-info strong {
+    font-weight: bold;
+}
+
+/* --- Back Button --- */
+.back-button {
+    background-color: #ff385c;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #ff6f79;
+    transform: scale(1.05);
+}

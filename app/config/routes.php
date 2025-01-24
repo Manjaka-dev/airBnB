@@ -19,6 +19,10 @@ $router->get('/', function() {
 	Flight::render('home');
 });
 
+
+$router->get('/test', function() {
+	Flight::render('front-office-template', ['page' => 'list-housing']);
+});
 $router->group('/user', function() use ($router) {
 	$loging_cont = new UserController();
 
