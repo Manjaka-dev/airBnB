@@ -11,7 +11,7 @@
     <nav>
         <!-- logo -->
         <div class="logo">
-            <img src="/assets/image/logo.jpg" alt="logo">
+            <a href="/"><img src="/assets/image/logo.jpg" alt="logo"></a>
         </div>
         <!-- Search -->
         <div class="search">
@@ -41,6 +41,11 @@
             </ul>
         </div>
     </nav>
+    <main>
+        <?php 
+            include $page.'.php';
+        ?>
+    </main>
 
     <script src="/assets/js/front-office.js"></script>
 </body>
