@@ -31,6 +31,12 @@
         </div>
     </nav>
 
+    <main>
+        <?php 
+            include $page.'.php';
+        ?>
+    </main>
+
     <script src="/assets/js/front-office.js"></script>
 </body>
 </html>
