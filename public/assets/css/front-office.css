@@ -19,7 +19,7 @@ nav {
     padding: 15px;
     background-color: #1c1c1c;
     color: #fff;
-    position: relative;
+    position: static;
 }
 
 nav .logo img {

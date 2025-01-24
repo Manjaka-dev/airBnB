@@ -11,8 +11,8 @@ use app\controllers\UserController;
  */
 
  $router->get('/test', function() {
-	Flight::render('back-office-template');
- });
+	Flight::render('back-office-template', ['page' => 'insert-housing']);
+});
 
 
 $router->get('/', function() {
@@ -20,9 +20,6 @@ $router->get('/', function() {
 });
 
 
-$router->get('/test', function() {
-	Flight::render('front-office-template', ['page' => 'list-housing']);
-});
 $router->group('/user', function() use ($router) {
 	$loging_cont = new UserController();
 
