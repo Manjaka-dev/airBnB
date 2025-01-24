@@ -1,0 +1,150 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #1c1c1c;
+    color: #fff;
+    position: relative;
+}
+
+nav .logo img {
+    width: 120px;
+}
+
+/* Recherche */
+.search {
+    display: flex;
+    justify-content: center;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.search-input {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    border-radius: 50px;
+    width: 200px;
+}
+
+.search-button {
+    background-color: #ff5a5f;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+    background-color: #ff787d;
+}
+
+.search-button i {
+    font-size: 1.2em; /* Icône de loupe */
+}
+
+/* Menu User */
+nav .user-menu {
+    display: flex;
+    align-items: center;
+}
+
+nav .user-menu span {
+    margin-right: 10px;
+}
+
+nav .user-menu .profile-picture {
+    cursor: pointer;
+}
+
+nav .user-menu .profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Content menu (initially hidden) */
+#content-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 200px;
+    padding: 10px;
+}
+
+#content-menu ul {
+    list-style-type: none;
+}
+
+#content-menu ul li {
+    padding: 10px;
+}
+
+#content-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+#content-menu ul li a:hover {
+    background-color: #ff5a5f;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Styling for the logout button */
+.logout:hover {
+    color: #fff;
+    background-color: #ff5a5f; /* Red color */
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.logout {
+    transition: all 0.3s ease;
+}
+
+/* Add animation for the menu */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content-menu {
+    animation: slideDown 0.3s ease-out;
+}

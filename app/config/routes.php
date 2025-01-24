@@ -10,10 +10,15 @@ use app\controllers\UserController;
  * @var Engine $app
  */
 
+ $router->get('/test', function() {
+	Flight::render('back-office-template');
+ });
+
 
 $router->get('/', function() {
 	Flight::render('home');
 });
+
 $router->group('/user', function() use ($router) {
 	$loging_cont = new UserController();
 
@@ -27,6 +32,7 @@ $router->group('/user', function() use ($router) {
 
 	$router->post('/inscription-check', [ $loging_cont, 'register' ]);
 });
+
 
 $router->group('/admin', function() use ($router) {
 	$loging_cont = new AdminController();
